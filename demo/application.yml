@@ -8,9 +8,9 @@ spec:
   source:
     chart: bitnami/wordpress
     repoURL: https://charts.bitnami.com/bitnami
-    targetRevision: 6.1.1
+    # targetRevision: 6.1.1
     helm:
       releaseName: wordpress
   destination:
     server: "https://kubernetes.default.svc"
-    namespace: kubeseal
+    namespace: wordpress
