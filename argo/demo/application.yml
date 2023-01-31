@@ -12,8 +12,8 @@ spec:
     helm:
       releaseName: wordpress
       valueFiles:
-      - values.yaml
-      # - https://github.com/peteriselksnis/argocd-sample-project-wp/external/values.yaml
+        - values.yaml
+        # - https://github.com/peteriselksnis/argocd-sample-project-wp/external/values.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: wp-demo
