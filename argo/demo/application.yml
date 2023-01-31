@@ -11,6 +11,9 @@ spec:
     targetRevision: 15.2.33
     helm:
       releaseName: wordpress
+      valueFiles:
+      - values.yaml
+      # - myprotocol://somepath/$ARGOCD_APP_NAME/$ARGOCD_APP_REVISION
   destination:
     server: "https://kubernetes.default.svc"
     namespace: wp-demo
