@@ -13,7 +13,7 @@ spec:
       releaseName: wordpress
       valueFiles:
       - values.yaml
-      # - myprotocol://somepath/$ARGOCD_APP_NAME/$ARGOCD_APP_REVISION
+      - https://github.com/peteriselksnis/argocd-sample-project-wp/external/values.yaml
   destination:
     server: "https://kubernetes.default.svc"
     namespace: wp
